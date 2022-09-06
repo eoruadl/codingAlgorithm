@@ -22,5 +22,6 @@ for i in range(6):
         oList.append(cList[i] - Clist[i])
     elif Clist[i] == cList[i]:
         oList.append(0)
-    print(oList[i], end=" ")
+    # print(oList[i], end=" ")
+print(*oList) # 출력 시 리스트값 앞에 * 을 입력하면 요소들을 다 같이 출력하게 됨
 
