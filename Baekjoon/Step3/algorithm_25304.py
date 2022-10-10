@@ -15,3 +15,22 @@
     구매한 물건의 가격과 개수로 계산한 총 금액이 영수증에 적힌 총 금액과 일치하면 Yes를 출력한다. 
     일치하지 않는다면 No를 출력한다.
 '''
+
+# 총 금액 입력
+total = int(input())
+
+# 물건의 종류 입력
+num = int(input())
+
+sum = 0
+
+# 종류수 만큼 금액과 갯수 입력하고 곱하여 금액 합하기
+for i in range(num):
+    a, b = map(int, input().split())
+    sum += a*b
+
+# 비교
+if total == sum:
+    print("Yes")
+else:
+    print("No")
