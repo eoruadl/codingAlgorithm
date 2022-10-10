@@ -16,25 +16,32 @@
 
 '''
 
+# def solution(array, commands):
+#     return list(map(lambda x:sorted(array[x[0]-1:x[1]])[x[2]-1], commands))
+
+# map(함수, 리스트) -> 리스트 값들 하나하나에 함수를 적용시킨다
+
+
 def solution(array, commands):
     answer = []
-    
+
     iter_num = len(commands)
     # ex [1, 5, 2, 6, 3, 7, 4]
-    
+
     for it in range(iter_num):
         i = commands[it][0]-1
         j = commands[it][1]
         k = commands[it][2]-1
     # sorted(array)
     # array.sort()
-    
+
         pre_sorted = array[i:j]
         answer.append(sorted(pre_sorted)[k])
     # pre_sorted.sort() -> 원본(변수)을 건드림
     # sorted(pre_sorted) -> 원본(변수)을 건드림 X
 
     return answer
+
 
 '''
     def solution(array, commands):
