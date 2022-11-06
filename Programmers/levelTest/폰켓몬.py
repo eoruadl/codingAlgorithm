@@ -16,3 +16,6 @@ def solution(nums):
         answer = a
     
     return answer
+
+def solution2(ls):
+    return min(len(ls)/2, len(set(ls)))
